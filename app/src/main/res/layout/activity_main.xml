@@ -6,15 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <Button
         android:id="@+id/logout"
         android:layout_width="wrap_content"
@@ -29,5 +20,73 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:rippleColor="@color/purple_200" />
+
+    <EditText
+        android:id="@+id/etTextNote"
+        android:layout_width="238dp"
+        android:layout_height="195dp"
+        android:ems="10"
+        android:hint="Type..."
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/logout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.486" />
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="51dp"
+        android:text="Save"
+        app:layout_constraintBottom_toTopOf="@+id/logout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etTextNote"
+        app:layout_constraintVertical_bias="0.032" />
+
+    <TextView
+        android:id="@+id/textViewNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Note"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/etTextNote"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.265"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etTextDate"
+        app:layout_constraintVertical_bias="0.77" />
+
+    <EditText
+        android:id="@+id/etTextDate"
+        android:layout_width="199dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="75dp"
+        android:ems="10"
+        android:hint="Type..."
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/etTextNote"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="Date"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.267"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
