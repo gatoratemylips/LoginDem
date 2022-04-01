@@ -68,7 +68,7 @@ public class Register extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
-                            Toast.makeText(Register.this, "User created." + fAuth.getUid().toString(), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(Register.this, "User created." + fAuth.getUid(), Toast.LENGTH_SHORT).show();
                             startActivity(new Intent(getApplicationContext(), MainActivity.class));
 
                         } else {
